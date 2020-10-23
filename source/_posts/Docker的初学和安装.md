@@ -1,5 +1,5 @@
 ---
-title: Docker入门
+title: Docker的初学和安装
 tags: [Docker]
 categories: Docker
 ---
@@ -75,8 +75,6 @@ curl -sSL https://get.daocloud.io/docker | sh
     sudo docker run hello-world
     ```
  
-
-
 **************
 ### 三、Docker镜像加速
 我们一般在`DockerHub`拉取镜像有时会遇到困难，此时我们就需要配置加速器。这里我使用国内加速器服务，阿里云：```https://<你的ID>.mirror.aliyuncs.com```

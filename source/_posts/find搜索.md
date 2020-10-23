@@ -1,7 +1,7 @@
 ﻿---
-title: Linux下的搜索和打包压缩命令
+title: Linux下的搜索grep和打包压缩tar
 tags: [Linux]
-categories: Linux指令
+categories: Linux
 ---
 ### 一、文件的查找
 #### 1. 按文件属性查找:   
@@ -14,7 +14,7 @@ categories: Linux指令
 ```
 
 2). **文件大小: find + 查找目录 + -size + +10k**    
-
+-size默认单位：512B--》0.5k--》一个扇区的大小
 ```
 说明: +表示大于 -表示小于 k为小写 M为大写
     find ~ -size +10k   //文件>10k   
@@ -33,6 +33,13 @@ categories: Linux指令
 字符设备|c
 socket文件|s
 管道|p(mkfifo创建管道)
+
+4). **查找目录：find  目录  -maxdepth  层数  -type d**
+>depth 在查找文件时，首先查找当前目录中的文件，然后再在其子目录中查找。
+
+```
+    find ./ -maxdepth 2 -type d   //查找当前路径下2层的目录
+```
 
 #### 2. 按文件内容查找:
 grep -r "查找的内容" + 查找的路径

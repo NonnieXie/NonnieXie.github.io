@@ -1,7 +1,7 @@
 ﻿---
 title: 最全的Linux基本指令
 tags: [Linux]
-categories: Linux指令
+categories: Linux
 ---
 ### Linux下的命令
 #### 一、查看帮助命令

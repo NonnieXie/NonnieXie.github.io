@@ -1,7 +1,7 @@
 ---
 title: Linux下的用户身份与文件权限
 tags: [Linux]
-categories: Linux指令
+categories: Linux
 ---
 
 ## 一、用户管理
